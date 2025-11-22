@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-import sys
-import json
+from ui.motd.motd import display_welcome_message
 
 def main():
     """
     Fungsi utama untuk CLI rout.
     """
-    print("Selamat datang di rout CLI!")
+    display_welcome_message()
 
 if __name__ == "__main__":
     main()
