@@ -12,8 +12,10 @@ def main():
     setup_rout_directory()
 
     display_welcome_message()
-    # Memulai sesi shell Zsh
-    os.system('zsh')
+    # Memulai sesi shell Zsh dengan ZDOTDIR yang diarahkan ke ~/.rout
+    home_dir = os.path.expanduser("~")
+    zdotdir = os.path.join(home_dir, '.rout')
+    os.system(f'ZDOTDIR="{zdotdir}" zsh')
 
 if __name__ == "__main__":
     main()
