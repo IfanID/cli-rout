@@ -1,0 +1,4 @@
+#!/bin/bash
+# Menjalankan skrip Python rout.py
+DIR_PATH=$(dirname "$(realpath "$0")")
+python3 "$DIR_PATH/rout.py" "$@"
